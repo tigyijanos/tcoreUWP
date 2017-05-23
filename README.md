@@ -1,6 +1,6 @@
 # tcoreUWP
 
-##AutoMapper
+## AutoMapper
 
 AutoMapper is a simple solution for mapping objects, lists and arrays...
 
@@ -13,17 +13,17 @@ firstList.CopyAndShallowPropertiesTo(target);
 
 ```
 
-##AutoView
+## AutoView
 AutoView loads a View for your ViewModel and it calls InitializeViewModel() method on it.
 
-###XAML:
+### XAML:
 ```
 xmlns:Common="using:TCore.UniversalApp.Common"
 
 <Common:AutoView IsAnimated="True" IsViewCacheAble="True" ViewModel={Binding MyViewModel}/>
 ```
 
-###C#: (MVVMLight)
+### C#: (MVVMLight)
 ```
 using TCore.UniversalApp;
 
@@ -38,11 +38,11 @@ public ITCoreViewModel MyViewModel
 ### IsAnimated
 Means it uses animation when loads a new ViewModel.
 
-###IsViewCacheAble
+### IsViewCacheAble
 Means it will cache your views.
 
-##XmlConverter
+## XmlConverter
 It serializes and deserializes your object to XML and back...
 
-##SimpleAnimation
+## SimpleAnimation
 This class can help you to trigger animations on your objects.
