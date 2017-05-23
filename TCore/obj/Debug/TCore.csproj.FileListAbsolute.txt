@@ -1,0 +1,10 @@
+c:\users\janos.tigyi\documents\visual studio 2015\Projects\TCore\TCore\bin\Debug\TCore.dll
+c:\users\janos.tigyi\documents\visual studio 2015\Projects\TCore\TCore\bin\Debug\TCore.pdb
+c:\users\janos.tigyi\documents\visual studio 2015\Projects\TCore\TCore\obj\Debug\TCore.csprojResolveAssemblyReference.cache
+c:\users\janos.tigyi\documents\visual studio 2015\Projects\TCore\TCore\obj\Debug\TCore.dll
+c:\users\janos.tigyi\documents\visual studio 2015\Projects\TCore\TCore\obj\Debug\TCore.pdb
+D:\Work\nuget\TCore\TCore\TCore\bin\Debug\TCore.dll
+D:\Work\nuget\TCore\TCore\TCore\bin\Debug\TCore.pdb
+D:\Work\nuget\TCore\TCore\TCore\obj\Debug\TCore.dll
+D:\Work\nuget\TCore\TCore\TCore\obj\Debug\TCore.pdb
+D:\Work\nuget\TCore\TCore\TCore\obj\Debug\TCore.csprojResolveAssemblyReference.cache

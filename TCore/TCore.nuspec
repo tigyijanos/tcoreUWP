@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>TCore</id>
+    <version>1.0</version>
+    <title>TCore</title>
+    <authors>Janos Tigyi</authors>
+    <owners>Janos Tigyi</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>TCore helpers</description>
+    <releaseNotes>Created TCore.</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>auto mapper</tags>
+  </metadata>
+</package>

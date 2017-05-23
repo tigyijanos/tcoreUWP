@@ -1,0 +1,33 @@
+﻿<UserControl
+    x:Class="TCore.UniversalApp.Common.AutoView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TCore.UniversalApp.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="initstates">
+                <VisualState x:Name="Initializing">
+                    <VisualState.Setters>
+                        <Setter Target="borderInitHandler.(UIElement.Visibility)" Value="Visible"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Initialized"/>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <Grid x:Name="autoViewGrid">
+            <Grid.Projection>
+                <PlaneProjection RotationY="0" GlobalOffsetY="0" GlobalOffsetX="0" x:Name="content"/>
+            </Grid.Projection>
+        </Grid>
+        <Border x:Name="borderInitHandler" BorderBrush="Black" BorderThickness="0" Background="Black" Visibility="Collapsed">
+            <ProgressRing HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="100" Height="100" IsActive="True" Foreground="White"/>
+        </Border>
+    </Grid>
+</UserControl>

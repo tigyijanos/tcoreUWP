@@ -1,0 +1,5 @@
+d:
+
+cd D:\Work\nuget\TCore\TCore\TCore.UniversalApp
+
+nuget pack TCore.UniversalApp.csproj -properties Configuration=Release

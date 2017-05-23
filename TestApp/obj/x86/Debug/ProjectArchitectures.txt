@@ -1,0 +1,2 @@
+D:\Work\nuget\TCore\TCore\TCore.UniversalApp\TCore.UniversalApp.csproj;neutral
+D:\Work\nuget\TCore\TCore\TestApp\TestApp.csproj;x86

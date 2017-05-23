@@ -1,0 +1,5 @@
+D:\Work\nuget\TCore\TCore\TCore\bin\Release\TCore.dll
+D:\Work\nuget\TCore\TCore\TCore\bin\Release\TCore.pdb
+D:\Work\nuget\TCore\TCore\TCore\obj\Release\TCore.dll
+D:\Work\nuget\TCore\TCore\TCore\obj\Release\TCore.pdb
+D:\Work\nuget\TCore\TCore\TCore\obj\Release\TCore.csprojResolveAssemblyReference.cache
