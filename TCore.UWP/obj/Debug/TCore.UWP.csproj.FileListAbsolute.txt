@@ -1,1 +1,0 @@
-D:\Work\nuget\TCore\TCore\TCore.UWP\obj\Debug\TCore.UWP.csprojResolveAssemblyReference.cache
