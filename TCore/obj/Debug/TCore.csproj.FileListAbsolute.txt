@@ -8,3 +8,7 @@ D:\Work\nuget\TCore\TCore\TCore\bin\Debug\TCore.pdb
 D:\Work\nuget\TCore\TCore\TCore\obj\Debug\TCore.dll
 D:\Work\nuget\TCore\TCore\TCore\obj\Debug\TCore.pdb
 D:\Work\nuget\TCore\TCore\TCore\obj\Debug\TCore.csprojResolveAssemblyReference.cache
+C:\Users\janos\Source\Repos\tcoreUWP\TCore\bin\Debug\TCore.dll
+C:\Users\janos\Source\Repos\tcoreUWP\TCore\bin\Debug\TCore.pdb
+C:\Users\janos\Source\Repos\tcoreUWP\TCore\obj\Debug\TCore.dll
+C:\Users\janos\Source\Repos\tcoreUWP\TCore\obj\Debug\TCore.pdb
