@@ -5,12 +5,11 @@ using TCore.UniversalApp.Interfaces.Common;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using System.Linq;
-using Windows.UI.Xaml.Media.Animation;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Data;
 using TCore.UniversalApp.Common.Animations;
-using System.Diagnostics;
-using System.Threading.Tasks;
+
+using AutoviewExt = TCore.UniversalApp.Common.AutoViewExt;
+using System.Threading;
 
 // The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
 
@@ -133,7 +132,7 @@ namespace TCore.UniversalApp.Common
             InitFailed,
         }
 
-        private static async void OnViewModelPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        private static void OnViewModelPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             var control = (d as AutoView);
             var viewModel = (e.NewValue as ITCoreViewModel);
@@ -142,13 +141,18 @@ namespace TCore.UniversalApp.Common
 
             if (viewModel != null)
             {
-                string viewName = viewModel.GetType().Name.Replace("ViewModel", "View");
+                // tries to get view if it's registered for viewmodel
+                var activatedView = AutoviewExt.TCoreViewModelExtensions.GetViewForViewModel(viewModel);
 
-                var viewModelAssembly = Assembly.Load(new AssemblyName(control.AssemblyNameForViews));
+                if (activatedView is null)
+                {
+                    // tries to find the view if it's not registered for viewModel
+                    string viewName = viewModel.GetType().Name.Replace("ViewModel", "View");
 
-                FrameworkElement activatedView = null;
+                    var viewModelAssembly = Assembly.Load(new AssemblyName(control.AssemblyNameForViews));
 
-                activatedView = ActivateViewOrGetFromCache(control, viewName, viewModelAssembly);
+                    activatedView = ActivateViewOrGetFromCache(control, viewName, viewModelAssembly);
+                }
 
                 activatedView.SetBinding(DataContextProperty, new Binding() { Source = viewModel });
 
@@ -164,6 +168,13 @@ namespace TCore.UniversalApp.Common
             }
         }
 
+        /// <summary>
+        /// Creates a new instance of view or gets from cache
+        /// </summary>
+        /// <param name="control"></param>
+        /// <param name="viewName"></param>
+        /// <param name="viewModelAssembly"></param>
+        /// <returns></returns>
         private static FrameworkElement ActivateViewOrGetFromCache(AutoView control, string viewName, Assembly viewModelAssembly)
         {
             FrameworkElement activatedView;
@@ -182,7 +193,13 @@ namespace TCore.UniversalApp.Common
 
             return activatedView;
         }
-
+        
+        /// <summary>
+        /// Activate a new instance of view
+        /// </summary>
+        /// <param name="viewName"></param>
+        /// <param name="viewModelAssembly"></param>
+        /// <returns></returns>
         private static FrameworkElement ActivateView(string viewName, Assembly viewModelAssembly)
         {
             FrameworkElement activatedView;
@@ -196,11 +213,20 @@ namespace TCore.UniversalApp.Common
         {
             await ((sender as FrameworkElement).DataContext as ITCoreViewModel).InitializeViewModel();
 
-            VisualStateManager.GoToState((((((sender as FrameworkElement).Parent) as FrameworkElement).Parent as FrameworkElement).Parent as AutoView), AutoViewInitStates.Initialized.ToString(), true);
+            try
+            {
+                VisualStateManager.GoToState((((((sender as FrameworkElement).Parent) as FrameworkElement)
+                    .Parent as FrameworkElement)
+                    .Parent as AutoView), AutoViewInitStates.Initialized.ToString(), true);
 
-            CreateAnimationForViews(sender);
+                CreateAnimationForViews(sender);
 
-            (sender as FrameworkElement).Loaded -= ActivatedView_Loaded;
+                (sender as FrameworkElement).Loaded -= ActivatedView_Loaded;
+            }
+            catch
+            {
+                // TODO : lekezelni a hibát
+            }
         }
 
         private static void CreateAnimationForViews(object sender)

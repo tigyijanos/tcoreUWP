@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TCore.UniversalApp.Common.AutoViewExt;
 using TCore.UniversalApp.DataOperations;
 using TCore.UniversalApp.Interfaces.Common;
 using TCore.UniversalApp.Mappers;
@@ -12,9 +13,18 @@ namespace TestApp
 {
     public class TestBViewModel : ITCoreViewModel
     {
+        public Enum ViewKey { get; set; }
+
         public enum MyEnum
         {
             alap
+        }
+
+        public TestBViewModel()
+        {
+            ViewKey = MyEnum.alap;
+
+            this.RegisterView(new TestView());
         }
 
         public async Task InitializeViewModel()

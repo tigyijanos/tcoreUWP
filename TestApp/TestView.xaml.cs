@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using TCore.UniversalApp.Interfaces.Common;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -17,7 +18,7 @@ using Windows.UI.Xaml.Navigation;
 
 namespace TestApp
 {
-    public sealed partial class TestView : UserControl
+    public sealed partial class TestView : UserControl, ITCoreView
     {
         public Guid AId { get; set; }
         public TestView()

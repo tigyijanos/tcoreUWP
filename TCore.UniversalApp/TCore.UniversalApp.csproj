@@ -115,6 +115,7 @@
     <Compile Include="Common\AutoView.xaml.cs">
       <DependentUpon>AutoView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Common\AutoViewExt\TCoreViewModelExtensions.cs" />
     <Compile Include="Converters\Boolean\BooleanToInverseBooleanConverter.cs" />
     <Compile Include="Converters\Boolean\BooleanToInverseVisibilityConverter.cs" />
     <Compile Include="Converters\Boolean\BooleanToVisibilityConverter.cs" />
@@ -123,6 +124,7 @@
     <Compile Include="DataOperations\LocalStorageService.cs" />
     <Compile Include="Helpers\Common\DialogHelpers.cs" />
     <Compile Include="Helpers\XML\XmlConverter.cs" />
+    <Compile Include="Interfaces\Common\ITCoreView.cs" />
     <Compile Include="Interfaces\Common\ITCoreViewModel.cs" />
     <Compile Include="Interfaces\DataOperations\ILocalStorageService.cs" />
     <Compile Include="Mappers\AutoMapper.cs" />

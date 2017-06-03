@@ -9,6 +9,8 @@ namespace TestApp
 {
     public class TestViewModel : ITCoreViewModel
     {
+        public Enum ViewKey { get; set; }
+
         public async Task InitializeViewModel()
         {
             await Task.Delay(1);
