@@ -1,5 +1,7 @@
 # tcoreUWP
 
+You can download here : [NuGet Gallery] (https://github.com/tigyijanos/tcoreUWP)
+
 ## AutoMapper
 
 AutoMapper is a simple solution for mapping objects, lists and arrays...
