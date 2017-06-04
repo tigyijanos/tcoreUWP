@@ -10,6 +10,10 @@
     d:DesignWidth="400">
 
     <Grid>
+        <Grid.Clip>
+            <RectangleGeometry Rect="0,0,45,34" />
+        </Grid.Clip>
+
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup x:ConnectionId='1' x:Name="initstates">
                 <VisualState x:ConnectionId='2' x:Name="Initializing">

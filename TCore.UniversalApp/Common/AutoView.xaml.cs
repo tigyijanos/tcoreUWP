@@ -10,6 +10,7 @@ using TCore.UniversalApp.Common.Animations;
 
 using AutoviewExt = TCore.UniversalApp.Common.AutoViewExt;
 using System.Threading;
+using Windows.UI.Xaml.Media;
 
 // The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
 
@@ -272,6 +273,17 @@ namespace TCore.UniversalApp.Common
         {
             this.InitializeComponent();
             VisualStateManager.GoToState(this, AutoViewInitStates.Initialized.ToString(), false);
+        }
+
+        /// <summary>
+        /// Clipping the maingrid prevent uggly animations
+        /// </summary>
+        private void ClipAutoviewMainGrid(object sender, SizeChangedEventArgs e)
+        {
+            Grid mainGrid = sender as Grid;
+
+            mainGrid.Clip = new RectangleGeometry();
+            mainGrid.Clip.Rect = new Windows.Foundation.Rect(0, 0, this.ActualWidth, this.ActualHeight);
         }
     }
 }

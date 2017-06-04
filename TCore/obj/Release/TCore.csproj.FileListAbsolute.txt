@@ -3,3 +3,8 @@ D:\Work\nuget\TCore\TCore\TCore\bin\Release\TCore.pdb
 D:\Work\nuget\TCore\TCore\TCore\obj\Release\TCore.dll
 D:\Work\nuget\TCore\TCore\TCore\obj\Release\TCore.pdb
 D:\Work\nuget\TCore\TCore\TCore\obj\Release\TCore.csprojResolveAssemblyReference.cache
+C:\Users\janos\Source\Repos\tcoreUWP\TCore\bin\Release\TCore.dll
+C:\Users\janos\Source\Repos\tcoreUWP\TCore\bin\Release\TCore.pdb
+C:\Users\janos\Source\Repos\tcoreUWP\TCore\obj\Release\TCore.csprojResolveAssemblyReference.cache
+C:\Users\janos\Source\Repos\tcoreUWP\TCore\obj\Release\TCore.dll
+C:\Users\janos\Source\Repos\tcoreUWP\TCore\obj\Release\TCore.pdb

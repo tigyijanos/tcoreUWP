@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\janos\Source\Repos\tcoreUWP\TestApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-23T18:49:35.236</Modified>
+      <Modified>2017-06-04T11:17:23.211</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\janos\Source\Repos\tcoreUWP\TestApp\bin\x86\Debug\TestApp.exe">
       <PackagePath>entrypoint\TestApp.exe</PackagePath>
-      <Modified>2017-05-23T18:49:31.351</Modified>
+      <Modified>2017-06-04T11:17:21.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\janos\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -505,7 +505,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\janos\Source\Repos\tcoreUWP\TCore.UniversalApp\bin\Debug\TCore.UniversalApp.dll">
       <PackagePath>TCore.UniversalApp.dll</PackagePath>
-      <Modified>2017-05-23T18:49:22.887</Modified>
+      <Modified>2017-06-04T11:16:58.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\janos\Source\Repos\tcoreUWP\TestApp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -551,7 +551,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\janos\Source\Repos\tcoreUWP\TCore.UniversalApp\bin\Debug\TCore.UniversalApp.xr.xml">
       <PackagePath>TCore.UniversalApp\TCore.UniversalApp.xr.xml</PackagePath>
-      <Modified>2017-01-06T20:18:00.488</Modified>
+      <Modified>2017-06-04T11:15:33.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -560,11 +560,11 @@
     <AppxPackagedFile Include="C:\Users\janos\Source\Repos\tcoreUWP\TestApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-23T18:49:34.438</Modified>
+      <Modified>2017-06-04T11:17:22.823</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\janos\Source\Repos\tcoreUWP\TestApp\bin\x86\Debug\Core\TestApp.exe">
       <PackagePath>TestApp.exe</PackagePath>
-      <Modified>2017-05-23T18:49:35.216</Modified>
+      <Modified>2017-06-04T11:17:23.207</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

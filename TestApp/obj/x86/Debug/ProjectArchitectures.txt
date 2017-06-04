@@ -1,0 +1,2 @@
+C:\Users\janos\Source\Repos\tcoreUWP\TCore.UniversalApp\TCore.UniversalApp.csproj;neutral
+C:\Users\janos\Source\Repos\tcoreUWP\TestApp\TestApp.csproj;x86

@@ -138,3 +138,10 @@
 /TestApp/bin/x86/Debug/clrcompression.dll
 /TestApp/bin/x86/Debug/AppxManifest.xml
 /TestApp/bin/x86/Debug/App.xbf
+/TestApp/obj/x86/Debug/FxResources.System.Diagnostics.Debug.SR.resw
+/TestApp/obj/x86/Debug/FxResources.System.Data.Common.SR.resw
+/TestApp/obj/x86/Debug/FxResources.System.ComponentModel.EventBasedAsync.SR.resw
+/TestApp/obj/x86/Debug/FxResources.System.ComponentModel.Annotations.SR.resw
+/TestApp/obj/x86/Debug/FxResources.System.Collections.SR.resw
+/TestApp/obj/x86/Debug/FxResources.System.Collections.Specialized.SR.resw
+/TestApp/obj/x86/Debug/FxResources.System.Xml.XmlSerializer.SR.resw

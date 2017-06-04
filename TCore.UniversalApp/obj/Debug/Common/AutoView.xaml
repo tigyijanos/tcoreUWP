@@ -9,24 +9,24 @@
     d:DesignHeight="300"
     d:DesignWidth="400">
 
-    <Grid>
+    <Grid x:ConnectionId='1'                                   >
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:ConnectionId='1' x:Name="initstates">
-                <VisualState x:ConnectionId='2' x:Name="Initializing">
+            <VisualStateGroup x:ConnectionId='2' x:Name="initstates">
+                <VisualState x:ConnectionId='3' x:Name="Initializing">
                     <VisualState.Setters>
                         <Setter Target="borderInitHandler.(UIElement.Visibility)" Value="Visible"/>
                     </VisualState.Setters>
                 </VisualState>
-                <VisualState x:ConnectionId='3' x:Name="Initialized"/>
+                <VisualState x:ConnectionId='4' x:Name="Initialized"/>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
 
-        <Grid x:ConnectionId='4' x:Name="autoViewGrid">
+        <Grid x:ConnectionId='5' x:Name="autoViewGrid">
             <Grid.Projection>
-                <PlaneProjection x:ConnectionId='6' RotationY="0" GlobalOffsetY="0" GlobalOffsetX="0" x:Name="content"/>
+                <PlaneProjection x:ConnectionId='7' RotationY="0" GlobalOffsetY="0" GlobalOffsetX="0" x:Name="content"/>
             </Grid.Projection>
         </Grid>
-        <Border x:ConnectionId='5' x:Name="borderInitHandler" BorderBrush="Black" BorderThickness="0" Background="Black" Visibility="Collapsed">
+        <Border x:ConnectionId='6' x:Name="borderInitHandler" BorderBrush="Black" BorderThickness="0" Background="Black" Visibility="Collapsed">
             <ProgressRing HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="100" Height="100" IsActive="True" Foreground="White"/>
         </Border>
     </Grid>
